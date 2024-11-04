@@ -28,4 +28,8 @@
     <AdditionalDesignTimeBuildInput Remove="FakesAssemblies\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SysTINSClass\SysTINSClass.csproj" />
+  </ItemGroup>
+
 </Project>

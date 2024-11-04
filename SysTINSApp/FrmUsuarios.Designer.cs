@@ -91,13 +91,14 @@
             dgvUsuarios.AllowUserToResizeRows = false;
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUsuarios.Columns.AddRange(new DataGridViewColumn[] { clnId, clnNome, clnEmail, clnNivel, clnAtivo });
-            dgvUsuarios.Location = new Point(93, 292);
+            dgvUsuarios.Location = new Point(107, 275);
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.RowHeadersVisible = false;
             dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvUsuarios.Size = new Size(500, 150);
             dgvUsuarios.TabIndex = 3;
             dgvUsuarios.CellClick += dgvUsuarios_CellClick;
+            dgvUsuarios.CellContentClick += dgvUsuarios_CellContentClick;
             // 
             // clnId
             // 
@@ -221,6 +222,7 @@
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(396, 23);
             txtNome.TabIndex = 12;
+            txtNome.TextChanged += txtNome_TextChanged;
             // 
             // txtEmail
             // 
@@ -258,7 +260,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 475);
+            ClientSize = new Size(800, 749);
             Controls.Add(txtConfSenha);
             Controls.Add(txtSenha);
             Controls.Add(txtEmail);

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SysTINSClass;
-using ZstdSharp.Unsafe;
+//using ZstdSharp.Unsafe;
 
 namespace SysTINSApp
 {
@@ -29,7 +29,7 @@ namespace SysTINSApp
             // carregando o datagrid de usuários
             CarregaGridUsuarios();
         }
-        private void btnInserir_Click(object sender, EventArgs e)
+        private void btnInserir_Click(object sender, EventArgs e)//produtos
         {
             Usuario usuario = new(
                 txtNome.Text,
@@ -90,6 +90,16 @@ namespace SysTINSApp
                 CarregaGridUsuarios();
                 MessageBox.Show("Usuário atualizado com sucesso!");
             }
+
+        }
+
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
