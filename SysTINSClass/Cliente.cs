@@ -32,18 +32,6 @@ namespace SysTINSClass
             DataCad = dataCad;
             Ativo = ativo;
         }
-        public Cliente(string? nome, string? cpf, string? telefone, string? email, DateTime? datanasc, DateTime? dataCad, string? ativo, List<Endereco> enderecos)
-        {
-            Nome = nome;
-            Cpf = cpf;
-            Telefone = telefone;
-            Email = email;
-            DataNasc = datanasc;
-            DataCad = dataCad;
-            Ativo = ativo;
-            Enderecos = enderecos;
-        }
-
         public Cliente(int id, string? nome, string? cpf, string? telefone, string? email, DateTime? datanasc, DateTime? dataCad, string? ativo, List<Endereco> enderecos)
         {
             Id = id;
@@ -54,7 +42,6 @@ namespace SysTINSClass
             DataNasc = datanasc;
             DataCad = dataCad;
             Ativo = ativo;
-            Enderecos = enderecos;
         }
 
         public Cliente()
